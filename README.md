@@ -1,7 +1,7 @@
 uni-cg-01
 =========
 
-First computer graphics class assignmentat VU
+First computer graphics class assignment at VU
 
 Draw 2d fractal similar to given image:
 
