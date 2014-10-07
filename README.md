@@ -19,3 +19,7 @@ Refrences
 Course lecturer: Rimvydas Krasauskas http://www.mif.vu.lt/~rimask
 
 Freegut for mingw: http://www.transmissionzero.co.uk/computing/using-glut-with-mingw
+
+IFS Construction Kit: http://ecademy.agnesscott.edu/~lriddle/ifskit
+
+Egidijus Lukauskas: https://github.com/egils/Grafika--2-u-duotis
