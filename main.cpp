@@ -1,8 +1,8 @@
 #include "cmath"
 #include "GL/glut.h"
 
-int current = 7;
-int draw_type = 1;
+int current = 0;
+int draw_type = 0;
 
 struct table {
     double a, b, c, d, e, f;
@@ -11,10 +11,10 @@ struct table {
 };
 
 static struct table tables[] = {
-        {0.5,  0.0,  0.0,  0.5,  0.0,  0.5, 4, 1, 0, 0},
-        {-0.5,  0.0,  0.0, 0.5,  1.0,  0.0, 4, 0, 1, 0 },
-        { 0.0,  0.5,  -0.5,  0.0,  0.0,  0.5, 4, 0, 0 ,1 },
-        { 0.0,  0.25,  0.25,  0.0,  0.5,  0.75, 1, 1, 1, 1 }
+        { 0.5,  0.0,    0.0,    0.5,  0.0,  0.5,    4, 1, 0, 0},
+        {-0.5,  0.0,    0.0,    0.5,  1.0,  0.0,    4, 0, 0, 1},
+        { 0.0,  0.5,    -0.5,   0.0,  0.0,  0.5,    4, 0, 1, 0},
+        { 0.0,  0.25,   0.25,   0.0,  0.5,  0.75,   1, 1, 1, 1}
 };
 
 static double xx = 0.0;
@@ -187,23 +187,19 @@ void resize(int w, int h) {
 }
 
 void keyboard(unsigned char c, int x, int y) {
-    current++;
-
-    if (c == 't') {
+    if ((c == 't') && (current > 0)) {
         if (draw_type == 0) {
             draw_type = 1;
         } else {
             draw_type = 0;
         }
-
+    } else if (current > 7) {
         current = 0;
+    } else {
+        current++;
     }
 
     draw();
-
-    if (current > 7) {
-        current = 0;
-    }
 }
 
 void init() {
