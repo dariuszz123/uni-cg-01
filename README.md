@@ -18,7 +18,7 @@ Dev Requirements
 =========
 
 * cmake
-* freeglut library located in C:\MinGW\freeglut
+* freeglut library located in C:\MinGW\freeglut (edit CmakeLists.txt for different location)
 
 Refrences
 =========
