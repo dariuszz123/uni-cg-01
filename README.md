@@ -30,3 +30,5 @@ Freegut for mingw: http://www.transmissionzero.co.uk/computing/using-glut-with-m
 IFS Construction Kit: http://ecademy.agnesscott.edu/~lriddle/ifskit
 
 Egidijus Lukauskas program: https://github.com/egils/Grafika--2-u-duotis
+
+http://www.hiddendimension.com/FractalMath/IFS_Fractals_Main.html
