@@ -10,7 +10,7 @@ Draw 2d fractal similar to given image:
 Usage
 =========
 
-"t" - tootle mode (transformations / dot probability)
+"t" - toggle mode (transformations / dot probability)
 
 Any key (except "t") increase step
 
